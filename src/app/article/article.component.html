@@ -1,0 +1,6 @@
+<ul>
+  @for (article of articles$ | async; track $index) {
+    <li>{{ article.title }}</li>
+    <li>{{ article.author.email }}</li>
+  }
+</ul>
