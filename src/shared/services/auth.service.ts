@@ -22,7 +22,10 @@ export class AuthService {
     private router: Router,
   ) {}
 
-  login(credentials: { email: string; password: string }): Observable<IToken> {
+  login(credentials: {
+    username: string;
+    password: string;
+  }): Observable<IToken> {
     return this.http.post<IToken>(`${this.url}/login_check`, credentials);
   }
 

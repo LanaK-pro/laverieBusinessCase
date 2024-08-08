@@ -1,8 +1,7 @@
-login.component.html
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
   <div formGroupName="credentials">
-    <label for="email">Email</label>
-    <input id="email" formControlName="email" />
+    <label for="username">Email</label>
+    <input id="username" formControlName="username" />
 
     <label for="password">Password</label>
     <input id="password" type="password" formControlName="password" />
